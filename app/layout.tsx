@@ -3,6 +3,7 @@ import { Inter } from "next/font/google"; // หรือ font ที่นา�
 import "./globals.css";
 import Navbar from "@/components/Navbar"; // 👈 1. import มาก่อน
 import Footer from "@/components/Footer";
+import Chatbot from "@/components/Chatbot";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -21,6 +22,7 @@ export default function RootLayout({
       <body className={inter.className}>
         <Navbar /> {/* 👈 2. วางไว้ตรงนี้ เหนือ children */}
         {children}
+        <Chatbot />
         <Footer />
       </body>
     </html>
